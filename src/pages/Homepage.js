@@ -3,7 +3,8 @@ import axios from "axios";
 import {row, Col, Row} from 'react-bootstrap';
 
 //components
-import Pokemon from '../components/Pokemon'
+import Pokemon from '../components/Pokemon';
+import Loader from "../components/Loader";
 
 const Homepage = () => {
  
@@ -37,9 +38,9 @@ const Homepage = () => {
     return(
 
         <>
-        {/* Om det laddar ser det ut "loading.." annars ser det ut rad 44 */}
+        {/* Om det laddar ser det ut "fetching pokemon" annars ser det ut rad 47*/}
         {loading ? (
-            <h1>Loading...</h1>
+            <Loader/>
         ) : (
 
             <Row>
