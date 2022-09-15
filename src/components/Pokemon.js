@@ -26,25 +26,13 @@ const Pokemon = ({ pokemon }) => {
                 <Card.Title as='div'> 
                   <strong>
 
-                   {pokemon.name.charAt(0) + pokemon.name.slice(1)}
+                   #{pokemon.id} {pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}
 
-                   {/* {pokemon.id} */}
-                    
-        
-                    
                   </strong>
-                
-
                 </Card.Title>
-
               </Link>
-
-
             </Card.Body>
-
-
       </Card>
-
     </>
   )
 }

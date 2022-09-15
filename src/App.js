@@ -6,10 +6,12 @@ import {Container} from 'react-bootstrap';
 //Pages
 import Homepage from './pages/Homepage';
 import PokemonPage from './pages/PokemonPage';
+import Header from './components/Header';
 
 const App = () => {
   return (
     <Router>
+    <Header/>
     <Container>
     
     <Route exact path='/' component={Homepage}/>
